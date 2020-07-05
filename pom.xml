@@ -5,7 +5,8 @@
 
     <groupId>com.idukelu.learn</groupId>
     <artifactId>learn-spring-cloud-netflix</artifactId>
-    <version>1.0.0</version>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
     <name>learn-spring-cloud-netflix</name>
     <description>Demo project for Spring Boot</description>
 
@@ -18,12 +19,16 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <java.version>1.8</java.version>
         <!-- version -->
-        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+        <revision>1.0.0</revision>
+        <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
     </properties>
 
     <modules>
+        <module>learn-spring-cloud-netflix-common</module>
         <module>learn-spring-cloud-netflix-eureka-server</module>
+        <module>learn-spring-cloud-netflix-eureka-client</module>
+        <module>learn-spring-cloud-netflix-feign-client</module>
     </modules>
 
     <dependencyManagement>

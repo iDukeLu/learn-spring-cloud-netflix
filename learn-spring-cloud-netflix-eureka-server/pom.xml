@@ -6,23 +6,30 @@
     <parent>
         <groupId>com.idukelu.learn</groupId>
         <artifactId>learn-spring-cloud-netflix</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
+        <relativePath>../</relativePath>
     </parent>
 
     <artifactId>learn-spring-cloud-netflix-eureka-server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>learn-spring-cloud-netflix :: eureka-server</name>
-    <description>eureka-server 注册中心</description>
+    <description>eureka 注册中心</description>
 
     <dependencies>
+        <!-- eureka server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
+        <!-- tools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
